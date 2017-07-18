@@ -1,6 +1,7 @@
 [alias]
 	; shorthands
 	co = checkout
+	cp = cherry-pick
 	; loggers
 	lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	; skips
@@ -12,3 +13,8 @@
 	rbi = rebase --interactive
 	rba = rebase --abort
 	rbc = rebase --continue
+	; Mirroring (WIP)
+	pp = !git pull && git push
+	mirror = !sh -c 'git remote add $1 $2 && git remote set-url --push $1 _nopush' -
+	pipeline = !sh -c 'git remote add $1 $2 && git remote set-url --push $1 $3' -
+	m2 = !sh -c 'git pipeline $1 $2 _nopush' -
