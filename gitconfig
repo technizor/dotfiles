@@ -19,3 +19,5 @@
 	mirror = !sh -c 'git remote add $1 $2 && git remote set-url --push $1 _nopush' -
 	pipeline = !sh -c 'git remote add $1 $2 && git remote set-url --push $1 $3' -
 	m2 = !sh -c 'git pipeline $1 $2 _nopush' -
+[include]
+	path = ~/.gitconfig_local

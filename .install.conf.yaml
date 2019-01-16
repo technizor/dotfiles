@@ -3,9 +3,11 @@
       create: true
       relink: true
 
-- clean: ['~', '~/.config']
+- clean: ['~']
 
 - link:
-    ~/.dotfiles:
+    ~/.dotfiles: ''
+    ~/.bash:
+    ~/.bash_profile:
     ~/.bashrc:
     ~/.gitconfig:
