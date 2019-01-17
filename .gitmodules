@@ -1,0 +1,6 @@
+[submodule "dotbot"]
+	path = .dotbot
+	url = https://github.com/anishathalye/dotbot
+[submodule "ssh-ident"]
+	path = .ssh-ident
+	url = https://github.com/ccontavalli/ssh-ident
